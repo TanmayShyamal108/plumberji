@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Link from "next/link";
+import LanguageIcon from '@mui/icons-material/Language';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +18,50 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <nav className="flex justify-between h-20 font-medium p-4 rounded mt-2">
+          <div>
+            <h2 className="text-red-500 font-extrabold text-3xl">Plumberji</h2>
+          </div>
+          <div>
+            <span><LanguageIcon /></span>
+            Join Our Pro Plumber Network
+          </div>
+          <div>
+            <Link href={'#'} className="me-4">Home</Link>
+            <Link href={'#'} className="me-4" >About Us</Link>
+            <Link href={'#'} className="me-4">Services</Link>
+            <Link href={'#'} className="me-4"  >Contact</Link>
+            <Link href={'/plumberReg1'} className="me-4"  >Plumber</Link>
+            <Link href={'/logInUser'} className="me-4">Login</Link>
+            <Link href={'/userRagistration'} className="me-4">Register</Link>
+
+            <button
+              type="button"
+
+              // className="btn btn-warning bi bi-cart4 position-relative"
+              // onClick={handleModalOpen}
+              className="relative inline-flex items-center p-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            >
+              {/* <ShoppingCartIcon className="position-relative"> */}
+              <span className="absolute inline-flex items-center justify-center w-6 h-6 text-xs font-bold text-white bg-red-500 border-2 border-white rounded-full -top-2 -end-2 dark:border-gray-900">
+                20
+              </span>
+              {/* </ShoppingCartIcon> */}
+            </button>
+
+
+          </div>
+
+        </nav>
+        <hr />
+        <aside className="text-end  mt-10 me-6">
+          <p className="font-bold">Call us : 123-456-7890</p>
+        </aside>
+
+
+
+        {children}</body>
     </html>
   );
 }
