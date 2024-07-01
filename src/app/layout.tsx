@@ -27,12 +27,12 @@ export default function RootLayout({
             <span className="me-4" ><LanguageIcon /></span>
             Join Our Pro Plumber Network
           </div>
-          <div className="text-slate-500">
+          <div className="text-slate-500 mt-10">
             <Link href={'#'} className="me-4">Home</Link>
             <Link href={'#'} className="me-4" >About Us</Link>
             <Link href={'#'} className="me-4">Services</Link>
             <Link href={'#'} className="me-4"  >Contact</Link>
-            <Link href={'/plumberReg1'} className="me-4"  >Plumber</Link>
+            <Link href={'/plumberReg'} className="me-4"  >Plumber</Link>
             <Link href={'/logInUser'} className="me-4">Login</Link>
             <Link href={'/userRagistration'} className="me-4">Register</Link>
 
