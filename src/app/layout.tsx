@@ -31,8 +31,8 @@ export default function RootLayout({
             <Link href={'#'} className="me-4">Home</Link>
             <Link href={'#'} className="me-4" >About Us</Link>
             <Link href={'#'} className="me-4">Services</Link>
-            <Link href={'#'} className="me-4"  >Contact</Link>
-            <Link href={'/plumberReg'} className="me-4"  >Plumber</Link>
+            <Link href={'#'} className="me-4">Contact</Link>
+            <Link href={'/formikStapper'} className="me-4"  >Plumber</Link>
             <Link href={'/logInUser'} className="me-4">Login</Link>
             <Link href={'/userRagistration'} className="me-4">Register</Link>
 
