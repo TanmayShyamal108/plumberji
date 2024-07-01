@@ -21,13 +21,13 @@ export default function RootLayout({
       <body className={inter.className}>
         <nav className="flex justify-between h-20 font-medium p-4 rounded mt-2">
           <div>
-            <h2 className="text-red-500 font-extrabold text-3xl">Plumberji</h2>
+            <h2 className="text-red-500 font-extrabold text-3xl ms-5">Plumberji</h2>
           </div>
-          <div>
-            <span><LanguageIcon /></span>
+          <div className="text-slate-500 ">
+            <span className="me-4" ><LanguageIcon /></span>
             Join Our Pro Plumber Network
           </div>
-          <div>
+          <div className="text-slate-500">
             <Link href={'#'} className="me-4">Home</Link>
             <Link href={'#'} className="me-4" >About Us</Link>
             <Link href={'#'} className="me-4">Services</Link>
@@ -58,10 +58,12 @@ export default function RootLayout({
         <aside className="text-end  mt-10 me-6">
           <p className="font-bold">Call us : 123-456-7890</p>
         </aside>
+        {children}
+        <footer className="mb-0  flex justify-center align-middle position-relative"  >
+          <p className="text-center">Copyright &copy; 2021 Plumberji. All Rights Reserved.</p>
+        </footer>
+      </body>
 
-
-
-        {children}</body>
     </html>
   );
 }
