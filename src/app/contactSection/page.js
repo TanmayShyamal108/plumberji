@@ -121,13 +121,7 @@ export default function Page() {
                                         </div>
                                     </div>
                                     <div className=" gap-x-6  px-4 py-4 sm:px-8 text-center border-1 border-black">
-
-                                        <Link
-                                            href="#"
-                                            className="w-full rounded-md bg-green-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-green-500 "
-                                        >
-                                            Submit
-                                        </Link>
+                                    <button className='text-white  bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center w-full'>Submit</button>
                                     </div>
                                 </form>
                             </div>
