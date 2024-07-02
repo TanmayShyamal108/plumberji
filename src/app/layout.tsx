@@ -19,20 +19,20 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <nav className="flex justify-between h-20 font-medium p-4 rounded mt-2">
+        <nav className="flex justify-between h-20 font-medium p-4 rounded mt-2 ">
           <div>
             <h2 className="text-red-500 font-extrabold text-3xl ms-5">Plumberji</h2>
           </div>
           <div className="text-slate-500 ">
-            <span className="me-4" ><LanguageIcon /></span>
-            Join Our Pro Plumber Network
+            <Link href={'/formikStapper'} className="me-4" ><LanguageIcon />Join Our Pro Plumber Network</Link>
+
           </div>
-          <div className="text-slate-500 mt-10">
-            <Link href={'#'} className="me-4">Home</Link>
-            <Link href={'#'} className="me-4" >About Us</Link>
-            <Link href={'#'} className="me-4">Services</Link>
-            <Link href={'#'} className="me-4">Contact</Link>
-            <Link href={'/formikStapper'} className="me-4"  >Plumber</Link>
+          <div className="text-slate-500 ">
+            <Link href={'/'} className="me-4">Home</Link>
+            <Link href={'/aboutUs'} className="me-4" >About Us</Link>
+            <Link href={'/ourServices'} className="me-4">Services</Link>
+            <Link href={'/contactSection'} className="me-4">Contact</Link>
+            {/* <Link href={'/formikStapper'} className="me-4"  >Plumber</Link> */}
             <Link href={'/logInUser'} className="me-4">Login</Link>
             <Link href={'/userRagistration'} className="me-4">Register</Link>
 

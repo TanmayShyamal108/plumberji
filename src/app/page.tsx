@@ -8,8 +8,8 @@ export default function Home() {
   const cartCount = 0;
 
   return (
-    <body className="container-fluid m-3 " >
-     
+    <div >
+
 
 
       <div className="flex justify-center align-middle" style={{ height: "100vh" }}>
@@ -68,11 +68,11 @@ export default function Home() {
 
         </main>
       </div>
-      
 
 
 
 
-    </body>
+
+    </div>
   );
 }
